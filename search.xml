@@ -48,7 +48,7 @@
       </tags>
   </entry>
   <entry>
-    <title>vim常用命令.md</title>
+    <title>vim常用命令</title>
     <url>/2022/08/19/vim%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</url>
     <content><![CDATA[<p>vim是一个便捷易用的文书编辑器，Mac系统和Linux系统都自带vim编辑器。使用vim编辑Markdown文件的命令为<code>vim new.md</code>，默认进入的是<strong>命令模式</strong>，需要先输入<code>i</code>切换至<strong>输入模式</strong>才可以进行文字编辑。</p>
 <h1 id="vim模式切换"><a href="#vim模式切换" class="headerlink" title="vim模式切换"></a>vim模式切换</h1><p><code>i</code>从命令模式切换至输入模式<br><code>esc</code>从输入模式切换至命令模式</p>
