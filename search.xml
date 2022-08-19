@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Pysal学习笔记</title>
-    <url>/2022/08/19/Pysal%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
+    <title>Pysal学习笔记（1）——概述</title>
+    <url>/2022/08/19/Pysal%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%881%EF%BC%89/</url>
     <content><![CDATA[<h1 id="Pysal是什么"><a href="#Pysal是什么" class="headerlink" title="Pysal是什么"></a>Pysal是什么</h1><ul>
 <li>Pysal是python的一个库，应用于空间分析</li>
 <li>可侦测空间聚类、空间热点和异常值（<em>detection of spatial clusters, hot-spots, and outliers</em>）</li>
@@ -40,8 +40,11 @@
 <p>[1] Sergio Rey, Phil, Taylor Oshan, Charles Schmidt, jlaura, Levi John Wolf, Dani Arribas-Bel, David C. Folch, mhwang4, Nicholas Malizia, Wei Kang, Pedro Amaral, James Gaboardi, Luc Anselin, eli knaap, Qunshan, Stefanie Lumnitz, Andrew Winslow, Bas Couwenberg, … Caleb Robinson. (2022). pysal&#x2F;pysal: Release v2.7.0 (v2.7.0). Zenodo. <a href="https://doi.org/10.5281/zenodo.6946292">https://doi.org/10.5281/zenodo.6946292</a><br>[2] <a href="https://github.com/pysal/pysal">https://github.com/pysal/pysal</a></p>
 </blockquote>
 ]]></content>
+      <categories>
+        <category>Python</category>
+      </categories>
       <tags>
-        <tag>python</tag>
+        <tag>pysal</tag>
       </tags>
   </entry>
 </search>
