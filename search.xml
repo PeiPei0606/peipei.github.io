@@ -47,4 +47,22 @@
         <tag>pysal</tag>
       </tags>
   </entry>
+  <entry>
+    <title>vim常用命令.md</title>
+    <url>/2022/08/19/vim%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</url>
+    <content><![CDATA[<p>vim是一个便捷易用的文书编辑器，Mac系统和Linux系统都自带vim编辑器。使用vim编辑Markdown文件的命令为<code>vim new.md</code>，默认进入的是<strong>命令模式</strong>，需要先输入<code>i</code>切换至<strong>输入模式</strong>才可以进行文字编辑。</p>
+<h1 id="vim模式切换"><a href="#vim模式切换" class="headerlink" title="vim模式切换"></a>vim模式切换</h1><p><code>i</code>从命令模式切换至输入模式<br><code>esc</code>从输入模式切换至命令模式</p>
+<h1 id="vim底线命令模式"><a href="#vim底线命令模式" class="headerlink" title="vim底线命令模式"></a>vim底线命令模式</h1><p><code>:wq</code>保存并退出<br><code>:q！</code>不保存退出<br><code>:w</code>保存文件<br><code>:q</code>退出文件<br><code>:h</code>帮助<br><code>:new</code>新建文件并用vim打开</p>
+<h1 id="vim输入模式"><a href="#vim输入模式" class="headerlink" title="vim输入模式"></a>vim输入模式</h1><p>输入模式中的按键操作与其他文本编辑器的操作一致。<br><code>方向键</code>在文本中移动光标<br><code>回车键</code>换行<br><code>退格键</code>删除光标前一个字符<br><code>删除键</code>删除光标后一个字符<br><code>HOME/END</code>移动光标到行首&#x2F;行尾<br><code>Page Up/Page Down</code>上&#x2F;下翻页<br><code>Insert</code>切换光标为输入&#x2F;替换模式，光标将变成竖线&#x2F;下划线</p>
+<h1 id="参考引用"><a href="#参考引用" class="headerlink" title="参考引用"></a>参考引用</h1><blockquote>
+<p><a href="https://www.runoob.com/linux/linux-vim.html">https://www.runoob.com/linux/linux-vim.html</a></p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>Linux</category>
+      </categories>
+      <tags>
+        <tag>vim</tag>
+      </tags>
+  </entry>
 </search>
