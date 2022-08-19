@@ -150,18 +150,18 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-count">4</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
           <a href="/categories/">
-        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-count">3</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
           <a href="/tags/">
-        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-count">5</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -190,6 +190,191 @@
 
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/08/19/Hexo-nexT%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%9C%80%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C%E5%8F%8A%E5%91%BD%E4%BB%A4/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Peiying LYU">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Peiying's blog">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | Peiying's blog">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2022/08/19/Hexo-nexT%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%9C%80%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C%E5%8F%8A%E5%91%BD%E4%BB%A4/" class="post-title-link" itemprop="url">Hexo nexT个人博客最常用操作及命令</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+      
+
+      <time title="创建时间：2022-08-19 17:45:44 / 修改时间：17:55:09" itemprop="dateCreated datePublished" datetime="2022-08-19T17:45:44+08:00">2022-08-19</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/Web/" itemprop="url" rel="index"><span itemprop="name">Web</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>本文是在网站已经部署生成后的常用操作和命令，目的是对个人博客网站进行管理。</p>
+<hr>
+<h1 id="1-定位博客所在路径"><a href="#1-定位博客所在路径" class="headerlink" title="1. 定位博客所在路径"></a>1. 定位博客所在路径</h1><p>首先要先找到博客所在的路径。我是苹果电脑，路径位于<code>/Users/peipei/blog</code>。在<strong>终端</strong>中输入<code>cd /Users/peipei/blog</code>定位到博客所在路径。</p>
+<h1 id="2-新建一篇博客"><a href="#2-新建一篇博客" class="headerlink" title="2. 新建一篇博客"></a>2. 新建一篇博客</h1><p><code>sudo hexo n &quot;博客文档名&quot;</code>用管理员命令新建一篇博客，不需要加后缀，就能自动生成Markdown格式的文档。第一次操作需要输入电脑的管理员密码。新建的博客文档路径为<code>/Users/peipei/blog/source/_posts</code></p>
+<h1 id="3-编辑一篇博客"><a href="#3-编辑一篇博客" class="headerlink" title="3. 编辑一篇博客"></a>3. 编辑一篇博客</h1><p><code>cd source/_posts</code>定位到博客文章的储存路径<br><code>sudo vim 博客文档名.md</code>管理员权限下使用vim编辑器编辑博客（vim编辑博客的常用命令可参考文章<a target="_blank" rel="noopener" href="https://peipei0606.github.io/2022/08/19/vim%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/">Peiying’s blog-vim常用命令</a>）</p>
+<h1 id="4-为博客添加分类和标签"><a href="#4-为博客添加分类和标签" class="headerlink" title="4. 为博客添加分类和标签"></a>4. 为博客添加分类和标签</h1><p>进入博客编辑后，可见hexo已经帮我们自动生成了如下文字。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: Linux最常用命令</span><br><span class="line">date: 2022-08-19 16:50:25</span><br><span class="line">tags: </span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+<p>添加分类需要添加<code>categories</code>，添加标签需要添加<code>tags</code>，例如：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: Linux最常用命令</span><br><span class="line">date: 2022-08-19 16:50:25</span><br><span class="line">categories: &quot;Linux&quot;</span><br><span class="line">tags: &quot;linux&quot;</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+<h1 id="5-删除博客文章"><a href="#5-删除博客文章" class="headerlink" title="5. 删除博客文章"></a>5. 删除博客文章</h1><p>直接在博客文档路径<code>/Users/peipei/blog/source/_posts</code>下面把想删的博客删掉，或者使用Linux命令<code>rm</code>删除博客文章，然后依次执行执行：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo hexo clean</span><br><span class="line">sudo hexo g</span><br></pre></td></tr></table></figure>
+<h1 id="6-添加菜单栏属性"><a href="#6-添加菜单栏属性" class="headerlink" title="6. 添加菜单栏属性"></a>6. 添加菜单栏属性</h1><p>菜单栏中默认只有“首页”“标签”“归档”等项目，如果需要添加新的页面（如“分类”），需要进行以下操作。</p>
+<pre><code>* 新建“分类”的页面。`sudo hexo new page categories`
+* 编辑config文件。`sudo vim _config.next.yml`路径在`/blog`下面
+* 编辑config文件中的Menu模块。找到Menu模块，添加一行`categories: /categories/ || categories`，如下：
+</code></pre>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"># Menu</span><br><span class="line">menu:</span><br><span class="line">  home: / || home</span><br><span class="line">  categories: /categories/ || categories</span><br><span class="line">  tags: /tags/ || tags</span><br><span class="line">  about: /about/ || user</span><br><span class="line">  archives: /archives/ || archive</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h1 id="7-生成网站到本地"><a href="#7-生成网站到本地" class="headerlink" title="7. 生成网站到本地"></a>7. 生成网站到本地</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sudo hexo clean</span><br><span class="line">sudo hexo g</span><br><span class="line">sudo hexo s</span><br></pre></td></tr></table></figure>
+<p>随后根据提示，在浏览器中打开<code>http://localhost:4000/</code></p>
+<h1 id="8-发布网站到github"><a href="#8-发布网站到github" class="headerlink" title="8. 发布网站到github"></a>8. 发布网站到github</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sudo hexo clean</span><br><span class="line">sudo hexo g</span><br><span class="line">sudo hexo d</span><br></pre></td></tr></table></figure>
+<p>注意：这步的前提是在_config.yml文件中，已经在Deployment模块指定了repo的地址，如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># Deployment</span><br><span class="line">## Docs: https://hexo.io/docs/one-command-deployment</span><br><span class="line">deploy:</span><br><span class="line">  type:  git</span><br><span class="line">  repo:  https://github.com/PeiPei0606/peipei0606.github.io.git</span><br><span class="line">  branch:  master</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/08/19/Linux%E6%9C%80%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Peiying LYU">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Peiying's blog">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | Peiying's blog">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2022/08/19/Linux%E6%9C%80%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/" class="post-title-link" itemprop="url">Linux最常用命令</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+      
+
+      <time title="创建时间：2022-08-19 16:50:25 / 修改时间：17:29:42" itemprop="dateCreated datePublished" datetime="2022-08-19T16:50:25+08:00">2022-08-19</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/Linux/" itemprop="url" rel="index"><span itemprop="name">Linux</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>经常用到的命令，之后会根据需要慢慢补充</p>
+<hr>
+<p><code>pwd</code>显示当前目录<br><code>ls</code>列出目录以及文件名<br><code>cd</code>打开某个目录<br><code>cd ..</code>返回上一级目录<br><code>sudo</code>在命令前加sudo是使用管理员权限操作的意思</p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 

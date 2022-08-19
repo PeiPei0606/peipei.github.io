@@ -20,28 +20,27 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Muse","darkmode":false,"version":"8.12.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="我是一个实习研究员，目前在广州城市战略研究院工作，跟随巫细波教授，从事区域经济、空间分析与GIS应用方向的研究。 我本科就读于河海大学（2016-2020）的地理信息科学专业，硕士就读于香港中文大学（2020-2021）的地理信息科学（Master of Information Science）专业。 在本科本科时期，在地图制图、遥感、地理信息系统开发等方面打下了基础。在一次课程设计中，与同学协作">
-<meta property="og:type" content="website">
-<meta property="og:title" content="关于我">
-<meta property="og:url" content="http://example.com/about/index.html">
+    <meta name="description" content="经常用到的命令，之后会根据需要慢慢补充  pwd显示当前目录ls列出目录以及文件名cd打开某个目录cd ..返回上一级目录sudo在命令前加sudo是使用管理员权限操作的意思">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Linux最常用命令">
+<meta property="og:url" content="http://example.com/2022/08/19/Linux%E6%9C%80%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/index.html">
 <meta property="og:site_name" content="Peiying&#39;s blog">
-<meta property="og:description" content="我是一个实习研究员，目前在广州城市战略研究院工作，跟随巫细波教授，从事区域经济、空间分析与GIS应用方向的研究。 我本科就读于河海大学（2016-2020）的地理信息科学专业，硕士就读于香港中文大学（2020-2021）的地理信息科学（Master of Information Science）专业。 在本科本科时期，在地图制图、遥感、地理信息系统开发等方面打下了基础。在一次课程设计中，与同学协作">
+<meta property="og:description" content="经常用到的命令，之后会根据需要慢慢补充  pwd显示当前目录ls列出目录以及文件名cd打开某个目录cd ..返回上一级目录sudo在命令前加sudo是使用管理员权限操作的意思">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2022-06-06T05:20:04.000Z">
-<meta property="article:modified_time" content="2022-06-06T09:53:24.471Z">
+<meta property="article:published_time" content="2022-08-19T08:50:25.000Z">
+<meta property="article:modified_time" content="2022-08-19T09:29:42.829Z">
 <meta property="article:author" content="Peiying LYU">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="http://example.com/about/">
+<link rel="canonical" href="http://example.com/2022/08/19/Linux%E6%9C%80%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":false,"lang":"zh-CN","comments":true,"permalink":"http://example.com/about/index.html","path":"about/index.html","title":"关于我"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://example.com/2022/08/19/Linux%E6%9C%80%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/","path":"2022/08/19/Linux最常用命令/","title":"Linux最常用命令"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>关于我 | Peiying's blog
-</title>
+<title>Linux最常用命令 | Peiying's blog</title>
   
 
 
@@ -130,7 +129,7 @@
 
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+    <div class="sidebar-inner sidebar-overview-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           文章目录
@@ -143,7 +142,6 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9C%A8%E6%9C%AC%E7%A7%91"><span class="nav-number">1.</span> <span class="nav-text">在本科</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9C%A8%E7%A1%95%E5%A3%AB"><span class="nav-number">2.</span> <span class="nav-text">在硕士</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%85%B3%E4%BA%8E%E6%9C%AA%E6%9D%A5"><span class="nav-number">3.</span> <span class="nav-text">关于未来</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%BB%E8%A6%81%E7%A0%94%E7%A9%B6%E6%88%90%E6%9E%9C"><span class="nav-number">4.</span> <span class="nav-text">主要研究成果</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -195,56 +193,102 @@
 </noscript>
 
 
-    <div class="main-inner page posts-expand">
+    <div class="main-inner post posts-expand">
 
 
-    
-    
-    
-    <div class="post-block" lang="zh-CN"><header class="post-header">
+  
 
-<h1 class="post-title" itemprop="name headline">关于我
-</h1>
 
-<div class="post-meta-container">
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/08/19/Linux%E6%9C%80%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Peiying LYU">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Peiying's blog">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="Linux最常用命令 | Peiying's blog">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Linux最常用命令
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+      
+
+      <time title="创建时间：2022-08-19 16:50:25 / 修改时间：17:29:42" itemprop="dateCreated datePublished" datetime="2022-08-19T16:50:25+08:00">2022-08-19</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/Linux/" itemprop="url" rel="index"><span itemprop="name">Linux</span></a>
+        </span>
+    </span>
+
+  
 </div>
 
-</header>
+        </div>
+      </header>
 
-      
-      
-      <div class="post-body">
-          <p>我是一个<strong>实习研究员</strong>，目前在<a target="_blank" rel="noopener" href="https://www.gzass.gd.cn/BM_ZLY/">广州城市战略研究院</a>工作，跟随<a target="_blank" rel="noopener" href="https://www.gzass.gd.cn/gzsky/contents/69/4615.html">巫细波教授</a>，从事区域经济、空间分析与GIS应用方向的研究。</p>
-<p>我本科就读于河海大学（2016-2020）的地理信息科学专业，硕士就读于香港中文大学（2020-2021）的地理信息科学（Master of Information Science）专业。</p>
-<h3 id="在本科"><a href="#在本科" class="headerlink" title="在本科"></a>在本科</h3><p>本科时期，在地图制图、遥感、地理信息系统开发等方面打下了基础。在一次课程设计中，与同学协作，成功基于C#开发了一个<strong>太湖流域管理系统</strong>，该系统能够实时记录并显示太湖流域的水位，这使我第一次领略到了地理信息系统开发的魅力。另外我也在参加大学生创新创业大赛中，接触了Web前端开发和安卓开发，基于nodeJS和Java，在和同学的合作下，实现了一个<strong>利用信标流实时记录停车场车位情况的app</strong>，并且成功申请了专利，这次经历让我十分难忘，因为在过程中，我们的组长带领我们克服了很多困难，老师也耐心指导我们做技术上的工作。在最后的毕业论文中，我选择了遥感方向，通过遥感图像生成几种干旱指数，并建立起土壤湿度与干旱指数的联系，构建<strong>土壤湿度反演模型</strong>。本科期间仍有许许多多的学习经历，这些经历都是无比珍贵的，正因为有了这些有趣的学习经历，才让我想要继续在GIS的领域中探索。</p>
-<h3 id="在硕士"><a href="#在硕士" class="headerlink" title="在硕士"></a>在硕士</h3><p>2020年是新冠疫情全球大流行的一年，我无法前往香港当地接受面对面授课，这是一件非常遗憾的事情。但香港中文大学的老师们为学生们安排的线上教学模式依然非常有趣。我在期间学会了使用Python抓取高德地图的POI（point of interest），也学习了几种常用的神经网络，如卷积神经网络（CNN）、循环神经网络（RNN）、人工神经网络（ANN）。</p>
-<h3 id="关于未来"><a href="#关于未来" class="headerlink" title="关于未来"></a>关于未来</h3><p>我希望能够继续在GIS行业深耕并有所创新。我想从事的研究方向有以下几方面：</p>
-<ul>
-<li><input disabled="" type="checkbox"> 区域经济</li>
-<li><input disabled="" type="checkbox"> 空间分析</li>
-<li><input disabled="" type="checkbox"> GIS应用</li>
-</ul>
-<h3 id="主要研究成果"><a href="#主要研究成果" class="headerlink" title="主要研究成果"></a>主要研究成果</h3><ul>
-<li>巫细波, 赖长强, 吕沛颖. 后补贴时代广东新能源汽车产业面临挑战与对策研究[J].科技与金融,2022(04):30-37.</li>
-<li>吕沛颖, 巫细波. COVID-19疫情对我国区域经济的影响及空间溢出效应研究[J]. 可持续发展, 2022, 12(2): 340-349. <a target="_blank" rel="noopener" href="https://doi.org/10.12677/SD.2022.122037">https://doi.org/10.12677/SD.2022.122037</a></li>
-<li>吕沛颖, 巫细波, 赖长强. COVID-19疫情对全球汽车市场影响的实证分析——基于空间计量模型[J]. 世界经济探索, 2021, 10(4): 141-151. <a target="_blank" rel="noopener" href="https://doi.org/10.12677/WER.2021.104018">https://doi.org/10.12677/WER.2021.104018</a></li>
-<li>张小英, 巫细波, 吕沛颖. 基于POI数据的特大城市商业业态空间分布及影响因素差异研究——以广州为例[J]. 地理科学研究, 2021, 10(4): 392-408. <a target="_blank" rel="noopener" href="https://doi.org/10.12677/GSER.2021.104045">https://doi.org/10.12677/GSER.2021.104045</a></li>
-<li>赖长强, 巫细波, 吕沛颖. 入世以来我国私家车消费变化特征及影响因素研究[J]. 社会科学前沿, 2022, 11(5): 1998-2007. <a target="_blank" rel="noopener" href="https://doi.org/10.12677/ASS.2022.115275">https://doi.org/10.12677/ASS.2022.115275</a></li>
-<li>兰泽多, 孙玉龙, 郭淑敏, 吕沛颖, 王星月. 一种基于混合信标流的地下车库车位定位及导航方法[P]. 江苏省：CN110648551B,2021-11-23.</li>
-</ul>
-<p><em>在审文章：</em></p>
-<ul>
-<li>吕沛颖, 巫细波. 我国软件和信息服务业时空格局及对制造业的影响研究</li>
-</ul>
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <p>经常用到的命令，之后会根据需要慢慢补充</p>
+<hr>
+<p><code>pwd</code>显示当前目录<br><code>ls</code>列出目录以及文件名<br><code>cd</code>打开某个目录<br><code>cd ..</code>返回上一级目录<br><code>sudo</code>在命令前加sudo是使用管理员权限操作的意思</p>
 
-      </div>
-      
-      
-      
     </div>
 
     
     
+    
+
+    <footer class="post-footer">
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2022/08/19/vim%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/" rel="prev" title="vim常用命令">
+                  <i class="fa fa-chevron-left"></i> vim常用命令
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/2022/08/19/Hexo-nexT%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%9C%80%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C%E5%8F%8A%E5%91%BD%E4%BB%A4/" rel="next" title="Hexo nexT个人博客最常用操作及命令">
+                  Hexo nexT个人博客最常用操作及命令 <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
 
 
 </div>
