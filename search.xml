@@ -51,53 +51,6 @@
       </categories>
   </entry>
   <entry>
-    <title>Pysal学习笔记（1）——概述</title>
-    <url>/2022/08/19/Pysal%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%881%EF%BC%89/</url>
-    <content><![CDATA[<h1 id="Pysal是什么"><a href="#Pysal是什么" class="headerlink" title="Pysal是什么"></a>Pysal是什么</h1><ul>
-<li>Pysal是python的一个库，应用于空间分析</li>
-<li>可侦测空间聚类、空间热点和异常值（<em>detection of spatial clusters, hot-spots, and outliers</em>）</li>
-<li>基于空间数据的图形构建（<em>construction of graphs from spatial data</em>）</li>
-<li>基于地理嵌入网络的空间回归和统计建模（<em>dspatial regression and statistical modeling on geographically embedded networks</em>）</li>
-<li>可用于空间计量（<em>spatial econometrics</em>）</li>
-<li>可用于时空数据探索分析（<em>exploratory spatio-temporal data analysis</em>）<h1 id="Pysal组成部分"><a href="#Pysal组成部分" class="headerlink" title="Pysal组成部分"></a>Pysal组成部分</h1><h2 id="Lib"><a href="#Lib" class="headerlink" title="Lib"></a>Lib</h2>解决几何的计算问题，包括点、线、面的图形构建，以及空间权重矩阵、空间权重图的构建和交互式编辑——计算alpha形状、空间索引和空间拓扑关系，以及读写稀疏图数据，也可作为单纯的矢量数据python阅读器。</li>
-<li>libpysal：提供支持库其余部分的基本算法和数据结构。包括：<ul>
-<li>io：输入输出模块。为常见的地理空间文件格式提供读写器</li>
-<li>weights：权重模块。提供存储空间权重矩阵的猪泪，以及几个操作程序</li>
-<li>cg：computational geometery，计算几何模块。有多种算法，包括有效处理Voronoi镶嵌和alpha形状的算法</li>
-<li>examples：示例模块。带有示例数据集的模块。<h2 id="Explore"><a href="#Explore" class="headerlink" title="Explore"></a>Explore</h2>对空间和时空数据进行探索性分析的模块。往高了讲，这个包致力于更好地理解数据的模式并提出新的有趣的问题，而不是回答现存的问题。包括空间分布结构的表征方法（网络上、连续分布的空间中和多边形网格上）。另外，这个包还提供了检查动态分布的方法，例如组成过程或空间范围随着时间的变化。</li>
-</ul>
-</li>
-<li>esda：实现全局和局部的空间分析和空间自相关，适用于连续数据和二相数据。此外，该包提供越来越多关于边界强度和统计分析中聚类误差测度的前沿统计</li>
-<li>giddy：是esda对时空数据的拓展。包含了最先进的关于空间在随时间动态分布的方法</li>
-<li>inequality：提供了空间和时间不平等的测算指标。包括经典度量例如Theil指数和均值形式的基尼系数，另外也有加入空间的考虑，例如将观测位置和空间配置纳入不平等的计算中</li>
-<li>momepy：是一个用于城市形态定量分析的库——城市形态计量学（urban morphometrics）。目的在于为系统的城市形态分析提供泛用的工具。它可以和多种元素一起使用，同时也致力于构建足迹地图和街道网络。momepy代表着python中的形态测量</li>
-<li>pointpats：支持点数据的统计分析，包括表征观察点模式的空间结构的方法：一个有着感兴趣现象记录的集合。这提供点模式整体几何概要的中心图测量，包括集中趋势、离散、强度和范围测量</li>
-<li>segregation：计算超过40种不同的分离指数，并为测量、可视化和假设检验提供一套额外计算方法，代表了定量分离分析的最新技术</li>
-<li>spaghetti：支持图形、网络、拓扑和推理的空间分析。包括用于对网络上的聚类进行统计测试的功能，具有多元处理功能的强大的Dijkstra最短路径算法，以及使用geopandas的高性能几何和空间计算方法，该方法是对网络进行高分辨率插值，以及将邻近网络观测连接到网络的重要方法。<h2 id="Model"><a href="#Model" class="headerlink" title="Model"></a>Model</h2>与explore相反，model更侧重于验证分析。该包包括使用各种线性、广义线性、广义加性、非线性、多尺度和局部回归模型来估计数据中的空间关系。</li>
-<li>mgwr：使用单尺度和多尺度的地理加权回归模型，在各种广义线性模型框架以及模型诊断工具中提供用于估计、推理和预测的变尺度算法</li>
-<li>spglm：实现了一组广义线性回归技术，包括高斯、泊松、逻辑回归（logistic regression），允许在计算和估计中进行稀疏矩阵运算，以降低内存开销并减少计算时间</li>
-<li>spint：提供了一系列用于研究空间交互过程和分析空间交互数据的工具。包括便于校正和解析一系列重力型空间交互模型的功能，包含生产约束、吸引力约束或两者结合的模型。</li>
-<li>spreg：提供经典和空间的经济计量模型估计。目前包括用于普通最小二乘估计（OLS），二阶最小二乘估计（2SLS）和似不相关估计（SUR），以及各种同态性、正态性、空间随机性等不同类型的空间自相关检验。它还包括了一套对具有二元独立变量（binary dependent variables）的空间依赖性测试。</li>
-<li>spvcm：为估计空间相关方差分量模型提供了广义框架。该模型运行方差分量的空间依赖性，因此邻近的组可能会互相影响。还提供了一个通用框架，用于使用Gibbs采样，由numba包加速</li>
-<li>tobler：提供了用于区域插值和dasymetric映射的功能。该名字是对传奇地理学家Waldo Tobler的直径，因为他是数十种空间分析方法的先驱。tobler包括使用区域加权方法插值的功能、利用遥感栅格数据作为辅助信息的基于回归模型的方法以及混合方法</li>
-<li>access：旨在使分析计算空间可达性变得更简单。该工作在传统上面临两个挑战：[1]计算准确的旅行时间（travel time）矩阵；[2]使用旅行时间（travel time）和供需位置（supply and demand locations）得出测度。access实现了经典的空间访问模型，可以简单对比方法和假设</li>
-<li>spopt：用于解决空间数据的优化问题。起源于Pysal中的一般区域模块，正在积极开发中，以包含新提出的区域化、设施定位和面向交通的解决方案模型和方法。<h2 id="Viz"><a href="#Viz" class="headerlink" title="Viz"></a>Viz</h2>提供了支持创建地理可视化和各种空间分析输出的可视化表示功能。可视化在现代空间&#x2F;地理数据科学中是一个重要的角色。当前的包提供了等值线映射的分类方法，和一个用于链接pysal的通用API输出到python生态的可视化工具包。</li>
-<li>legendgram：是一个提供”legendgrams“图例的小包，用于可视化分层设色地图。有助于制图分析以及空间数据可视化</li>
-<li>mapclassify：提供了分级设色图（Choropleth map）的功能。当前，有15种不同的分类方案可用，包括Fisher-Jenks最优分类的高优化实现。每个方案都继承了一个通用结构，以确保计算的可扩展并支持流式上下文的应用程序</li>
-<li>splot：为空间分析提供统计可视化。用于可视化全局和局部空间自相关（通过Moran散点图和聚类图）、聚类动态的时间分析（通过热图和玫瑰图）和多变量分级设色图（通过值-alpha图）。高级API支持创建可发布的可视化</li>
-</ul>
-<h1 id="参考引用"><a href="#参考引用" class="headerlink" title="参考引用"></a>参考引用</h1><blockquote>
-<p>[1] Sergio Rey, Phil, Taylor Oshan, Charles Schmidt, jlaura, Levi John Wolf, Dani Arribas-Bel, David C. Folch, mhwang4, Nicholas Malizia, Wei Kang, Pedro Amaral, James Gaboardi, Luc Anselin, eli knaap, Qunshan, Stefanie Lumnitz, Andrew Winslow, Bas Couwenberg, … Caleb Robinson. (2022). pysal&#x2F;pysal: Release v2.7.0 (v2.7.0). Zenodo. <a href="https://doi.org/10.5281/zenodo.6946292">https://doi.org/10.5281/zenodo.6946292</a><br>[2] <a href="https://github.com/pysal/pysal">https://github.com/pysal/pysal</a></p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>Python</category>
-      </categories>
-      <tags>
-        <tag>pysal</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>vim常用命令</title>
     <url>/2022/08/19/vim%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</url>
     <content><![CDATA[<p>vim是一个便捷易用的文书编辑器，Mac系统和Linux系统都自带vim编辑器。使用vim编辑Markdown文件的命令为<code>vim new.md</code>，默认进入的是<strong>命令模式</strong>，需要先输入<code>i</code>切换至<strong>输入模式</strong>才可以进行文字编辑。</p>
@@ -113,6 +66,65 @@
       </categories>
       <tags>
         <tag>vim</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Pysal学习笔记（1）——概述</title>
+    <url>/2022/08/19/Pysal%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%881%EF%BC%89/</url>
+    <content><![CDATA[<h1 id="Pysal是什么"><a href="#Pysal是什么" class="headerlink" title="Pysal是什么"></a>Pysal是什么</h1><ul>
+<li>Pysal是python的一个库，应用于空间分析</li>
+<li>可侦测空间聚类、空间热点和异常值（<em>detection of spatial clusters, hot-spots, and outliers</em>）</li>
+<li>基于空间数据的图形构建（<em>construction of graphs from spatial data</em>）</li>
+<li>基于地理嵌入网络的空间回归和统计建模（<em>dspatial regression and statistical modeling on geographically embedded networks</em>）</li>
+<li>可用于空间计量（<em>spatial econometrics</em>）</li>
+<li>可用于时空数据探索分析（<em>exploratory spatio-temporal data analysis</em>）</li>
+</ul>
+<h1 id="Pysal组成部分"><a href="#Pysal组成部分" class="headerlink" title="Pysal组成部分"></a>Pysal组成部分</h1><h2 id="Lib"><a href="#Lib" class="headerlink" title="Lib"></a>Lib</h2><p>解决几何的计算问题，包括点、线、面的图形构建，以及空间权重矩阵、空间权重图的构建和交互式编辑——计算alpha形状、空间索引和空间拓扑关系，以及读写稀疏图数据，也可作为单纯的矢量数据python阅读器。</p>
+<ul>
+<li>libpysal：提供支持库其余部分的基本算法和数据结构。包括：<ul>
+<li>io：输入输出模块。为常见的地理空间文件格式提供读写器</li>
+<li>weights：权重模块。提供存储空间权重矩阵的猪泪，以及几个操作程序</li>
+<li>cg：computational geometery，计算几何模块。有多种算法，包括有效处理Voronoi镶嵌和alpha形状的算法</li>
+<li>examples：示例模块。带有示例数据集的模块。</li>
+</ul>
+</li>
+</ul>
+<h2 id="Explore"><a href="#Explore" class="headerlink" title="Explore"></a>Explore</h2><p>对空间和时空数据进行探索性分析的模块。往高了讲，这个包致力于更好地理解数据的模式并提出新的有趣的问题，而不是回答现存的问题。包括空间分布结构的表征方法（网络上、连续分布的空间中和多边形网格上）。另外，这个包还提供了检查动态分布的方法，例如组成过程或空间范围随着时间的变化。</p>
+<ul>
+<li>esda：实现全局和局部的空间分析和空间自相关，适用于连续数据和二相数据。此外，该包提供越来越多关于边界强度和统计分析中聚类误差测度的前沿统计</li>
+<li>giddy：是esda对时空数据的拓展。包含了最先进的关于空间在随时间动态分布的方法</li>
+<li>inequality：提供了空间和时间不平等的测算指标。包括经典度量例如Theil指数和均值形式的基尼系数，另外也有加入空间的考虑，例如将观测位置和空间配置纳入不平等的计算中</li>
+<li>momepy：是一个用于城市形态定量分析的库——城市形态计量学（urban morphometrics）。目的在于为系统的城市形态分析提供泛用的工具。它可以和多种元素一起使用，同时也致力于构建足迹地图和街道网络。momepy代表着python中的形态测量</li>
+<li>pointpats：支持点数据的统计分析，包括表征观察点模式的空间结构的方法：一个有着感兴趣现象记录的集合。这提供点模式整体几何概要的中心图测量，包括集中趋势、离散、强度和范围测量</li>
+<li>segregation：计算超过40种不同的分离指数，并为测量、可视化和假设检验提供一套额外计算方法，代表了定量分离分析的最新技术</li>
+<li>spaghetti：支持图形、网络、拓扑和推理的空间分析。包括用于对网络上的聚类进行统计测试的功能，具有多元处理功能的强大的Dijkstra最短路径算法，以及使用geopandas的高性能几何和空间计算方法，该方法是对网络进行高分辨率插值，以及将邻近网络观测连接到网络的重要方法。</li>
+</ul>
+<h2 id="Model"><a href="#Model" class="headerlink" title="Model"></a>Model</h2><p>与explore相反，model更侧重于验证分析。该包包括使用各种线性、广义线性、广义加性、非线性、多尺度和局部回归模型来估计数据中的空间关系。</p>
+<ul>
+<li>mgwr：使用单尺度和多尺度的地理加权回归模型，在各种广义线性模型框架以及模型诊断工具中提供用于估计、推理和预测的变尺度算法</li>
+<li>spglm：实现了一组广义线性回归技术，包括高斯、泊松、逻辑回归（logistic regression），允许在计算和估计中进行稀疏矩阵运算，以降低内存开销并减少计算时间</li>
+<li>spint：提供了一系列用于研究空间交互过程和分析空间交互数据的工具。包括便于校正和解析一系列重力型空间交互模型的功能，包含生产约束、吸引力约束或两者结合的模型。</li>
+<li>spreg：提供经典和空间的经济计量模型估计。目前包括用于普通最小二乘估计（OLS），二阶最小二乘估计（2SLS）和似不相关估计（SUR），以及各种同态性、正态性、空间随机性等不同类型的空间自相关检验。它还包括了一套对具有二元独立变量（binary dependent variables）的空间依赖性测试。</li>
+<li>spvcm：为估计空间相关方差分量模型提供了广义框架。该模型运行方差分量的空间依赖性，因此邻近的组可能会互相影响。还提供了一个通用框架，用于使用Gibbs采样，由numba包加速</li>
+<li>tobler：提供了用于区域插值和dasymetric映射的功能。该名字是对传奇地理学家Waldo Tobler的直径，因为他是数十种空间分析方法的先驱。tobler包括使用区域加权方法插值的功能、利用遥感栅格数据作为辅助信息的基于回归模型的方法以及混合方法</li>
+<li>access：旨在使分析计算空间可达性变得更简单。该工作在传统上面临两个挑战：[1]计算准确的旅行时间（travel time）矩阵；[2]使用旅行时间（travel time）和供需位置（supply and demand locations）得出测度。access实现了经典的空间访问模型，可以简单对比方法和假设</li>
+<li>spopt：用于解决空间数据的优化问题。起源于Pysal中的一般区域模块，正在积极开发中，以包含新提出的区域化、设施定位和面向交通的解决方案模型和方法。</li>
+</ul>
+<h2 id="Viz"><a href="#Viz" class="headerlink" title="Viz"></a>Viz</h2><p>提供了支持创建地理可视化和各种空间分析输出的可视化表示功能。可视化在现代空间&#x2F;地理数据科学中是一个重要的角色。当前的包提供了等值线映射的分类方法，和一个用于链接pysal的通用API输出到python生态的可视化工具包。</p>
+<ul>
+<li>legendgram：是一个提供”legendgrams“图例的小包，用于可视化分层设色地图。有助于制图分析以及空间数据可视化</li>
+<li>mapclassify：提供了分级设色图（Choropleth map）的功能。当前，有15种不同的分类方案可用，包括Fisher-Jenks最优分类的高优化实现。每个方案都继承了一个通用结构，以确保计算的可扩展并支持流式上下文的应用程序</li>
+<li>splot：为空间分析提供统计可视化。用于可视化全局和局部空间自相关（通过Moran散点图和聚类图）、聚类动态的时间分析（通过热图和玫瑰图）和多变量分级设色图（通过值-alpha图）。高级API支持创建可发布的可视化</li>
+</ul>
+<h1 id="参考引用"><a href="#参考引用" class="headerlink" title="参考引用"></a>参考引用</h1><blockquote>
+<p>[1] Sergio Rey, Phil, Taylor Oshan, Charles Schmidt, jlaura, Levi John Wolf, Dani Arribas-Bel, David C. Folch, mhwang4, Nicholas Malizia, Wei Kang, Pedro Amaral, James Gaboardi, Luc Anselin, eli knaap, Qunshan, Stefanie Lumnitz, Andrew Winslow, Bas Couwenberg, … Caleb Robinson. (2022). pysal&#x2F;pysal: Release v2.7.0 (v2.7.0). Zenodo. <a href="https://doi.org/10.5281/zenodo.6946292">https://doi.org/10.5281/zenodo.6946292</a><br>[2] <a href="https://github.com/pysal/pysal">https://github.com/pysal/pysal</a></p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>Python</category>
+      </categories>
+      <tags>
+        <tag>pysal</tag>
       </tags>
   </entry>
 </search>
