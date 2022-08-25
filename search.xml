@@ -51,24 +51,6 @@
       </categories>
   </entry>
   <entry>
-    <title>vim常用命令</title>
-    <url>/2022/08/19/vim%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</url>
-    <content><![CDATA[<p>vim是一个便捷易用的文书编辑器，Mac系统和Linux系统都自带vim编辑器。使用vim编辑Markdown文件的命令为<code>vim new.md</code>，默认进入的是<strong>命令模式</strong>，需要先输入<code>i</code>切换至<strong>输入模式</strong>才可以进行文字编辑。</p>
-<h1 id="vim模式切换"><a href="#vim模式切换" class="headerlink" title="vim模式切换"></a>vim模式切换</h1><p><code>i</code>从命令模式切换至输入模式<br><code>esc</code>从输入模式切换至命令模式</p>
-<h1 id="vim底线命令模式"><a href="#vim底线命令模式" class="headerlink" title="vim底线命令模式"></a>vim底线命令模式</h1><p><code>:wq</code>保存并退出<br><code>:q！</code>不保存退出<br><code>:w</code>保存文件<br><code>:q</code>退出文件<br><code>:h</code>帮助<br><code>:new</code>新建文件并用vim打开</p>
-<h1 id="vim输入模式"><a href="#vim输入模式" class="headerlink" title="vim输入模式"></a>vim输入模式</h1><p>输入模式中的按键操作与其他文本编辑器的操作一致。<br><code>方向键</code>在文本中移动光标<br><code>回车键</code>换行<br><code>退格键</code>删除光标前一个字符<br><code>删除键</code>删除光标后一个字符<br><code>HOME/END</code>移动光标到行首&#x2F;行尾<br><code>Page Up/Page Down</code>上&#x2F;下翻页<br><code>Insert</code>切换光标为输入&#x2F;替换模式，光标将变成竖线&#x2F;下划线</p>
-<h1 id="参考引用"><a href="#参考引用" class="headerlink" title="参考引用"></a>参考引用</h1><blockquote>
-<p><a href="https://www.runoob.com/linux/linux-vim.html">https://www.runoob.com/linux/linux-vim.html</a></p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>Linux</category>
-      </categories>
-      <tags>
-        <tag>vim</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Pysal学习笔记（1）——概述</title>
     <url>/2022/08/19/Pysal%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%881%EF%BC%89/</url>
     <content><![CDATA[<h1 id="Pysal是什么"><a href="#Pysal是什么" class="headerlink" title="Pysal是什么"></a>Pysal是什么</h1><ul>
@@ -125,6 +107,45 @@
       </categories>
       <tags>
         <tag>pysal</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>vim常用命令</title>
+    <url>/2022/08/19/vim%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</url>
+    <content><![CDATA[<p>vim是一个便捷易用的文书编辑器，Mac系统和Linux系统都自带vim编辑器。使用vim编辑Markdown文件的命令为<code>vim new.md</code>，默认进入的是<strong>命令模式</strong>，需要先输入<code>i</code>切换至<strong>输入模式</strong>才可以进行文字编辑。</p>
+<h1 id="vim模式切换"><a href="#vim模式切换" class="headerlink" title="vim模式切换"></a>vim模式切换</h1><p><code>i</code>从命令模式切换至输入模式<br><code>esc</code>从输入模式切换至命令模式</p>
+<h1 id="vim底线命令模式"><a href="#vim底线命令模式" class="headerlink" title="vim底线命令模式"></a>vim底线命令模式</h1><p><code>:wq</code>保存并退出<br><code>:q！</code>不保存退出<br><code>:w</code>保存文件<br><code>:q</code>退出文件<br><code>:h</code>帮助<br><code>:new</code>新建文件并用vim打开</p>
+<h1 id="vim输入模式"><a href="#vim输入模式" class="headerlink" title="vim输入模式"></a>vim输入模式</h1><p>输入模式中的按键操作与其他文本编辑器的操作一致。<br><code>方向键</code>在文本中移动光标<br><code>回车键</code>换行<br><code>退格键</code>删除光标前一个字符<br><code>删除键</code>删除光标后一个字符<br><code>HOME/END</code>移动光标到行首&#x2F;行尾<br><code>Page Up/Page Down</code>上&#x2F;下翻页<br><code>Insert</code>切换光标为输入&#x2F;替换模式，光标将变成竖线&#x2F;下划线</p>
+<h1 id="参考引用"><a href="#参考引用" class="headerlink" title="参考引用"></a>参考引用</h1><blockquote>
+<p><a href="https://www.runoob.com/linux/linux-vim.html">https://www.runoob.com/linux/linux-vim.html</a></p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>Linux</category>
+      </categories>
+      <tags>
+        <tag>vim</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【Linux/Ubuntu】解决“正在等待缓存锁：无法获得锁 /var/lib/dpkg/lock-frontend。锁正由进程16525持有”问题</title>
+    <url>/2022/08/26/%E3%80%90Linux-Ubuntu%E3%80%91%E8%A7%A3%E5%86%B3%E2%80%9C%E6%AD%A3%E5%9C%A8%E7%AD%89%E5%BE%85%E7%BC%93%E5%AD%98%E9%94%81%EF%BC%9A%E6%97%A0%E6%B3%95%E8%8E%B7%E5%BE%97%E9%94%81-var-lib-dpkg-lock-frontend%E3%80%82%E9%94%81%E6%AD%A3%E7%94%B1%E8%BF%9B%E7%A8%8B16525%E6%8C%81%E6%9C%89%E2%80%9D%E9%97%AE%E9%A2%98/</url>
+    <content><![CDATA[<p><a href="https://www.helloimg.com/image/ZpkQaC"><img src="https://www.helloimg.com/images/2022/08/26/ZpkQaC.png" alt="lockerror.png"></a></p>
+<h1 id="问题的出现"><a href="#问题的出现" class="headerlink" title="问题的出现"></a>问题的出现</h1><p>我正在使用命令<code>apt install gdebi</code>安装时，突然出现了这个问题。通过搜索得知应该是正在运行其他安装命令，发生了冲突。但都可以用以下的方法解决。</p>
+<h1 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h1><ol>
+<li>在终端输入以下命令：<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">sudo rm /var/cache/apt/archives/lock</span><br></pre></td></tr></table></figure></li>
+<li>根据上图的错误提示可知，我们需要删掉的锁路径位于<code>/var/lib/dpkg/lock-frontend</code>。因此在终端继续输入以下命令：<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">sudo rm /var/lib/dpkg/lock-frontend</span><br></pre></td></tr></table></figure></li>
+<li>再次apt安装还是报错，如下图：<br><a href="https://www.helloimg.com/image/ZpkpHQ"><img src="https://www.helloimg.com/images/2022/08/26/ZpkpHQ.png" alt="ZpkpHQ.png"></a><br>这时候错误提示是出现了第二个锁，路径位于<code>/var/lib/dpkg/lock</code>，再次删掉。<br>在终端输入以下命令删掉第二个锁：<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">sudo rm /var/lib/dpkg/lock</span><br></pre></td></tr></table></figure></li>
+<li>这时候再apt安装，就没有问题了。<br><a href="https://www.helloimg.com/image/Zpkkgg"><img src="https://www.helloimg.com/images/2022/08/26/Zpkkgg.png" alt="Zpkkgg.png"></a></li>
+</ol>
+<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>apt安装出现锁进程的错误时，都可以用<code>sudo rm 锁错误出现的路径</code>进行解决。</p>
+<h1 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h1><p><a href="https://blog.csdn.net/weixin_44121966/article/details/118143296">https://blog.csdn.net/weixin_44121966/article/details/118143296</a></p>
+]]></content>
+      <categories>
+        <category>Linux</category>
+      </categories>
+      <tags>
+        <tag>linux</tag>
       </tags>
   </entry>
 </search>
