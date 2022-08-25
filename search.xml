@@ -173,4 +173,24 @@
         <tag>linux</tag>
       </tags>
   </entry>
+  <entry>
+    <title>【Linux/Ubuntu】使用Snap安装软件</title>
+    <url>/2022/08/26/%E3%80%90Linux-Ubuntu%E3%80%91%E4%BD%BF%E7%94%A8Snap%E5%AE%89%E8%A3%85%E8%BD%AF%E4%BB%B6/</url>
+    <content><![CDATA[<h1 id="问题的出现"><a href="#问题的出现" class="headerlink" title="问题的出现"></a>问题的出现</h1><p>我想要安装个印象笔记，但是可惜没有Linux版本，于是就去万能的Snap商店里面找。Snap商店里面的安装包有很多，但是质量参差不齐，安装过程还是比较方便的，主要使用命令行模式。</p>
+<h1 id="Snap安装方法"><a href="#Snap安装方法" class="headerlink" title="Snap安装方法"></a>Snap安装方法</h1><ol>
+<li>终端输入<code>snap</code>可查看常用命令帮助：<br><a href="https://www.helloimg.com/image/ZprCE5"><img src="https://www.helloimg.com/images/2022/08/26/ZprCE5.png" alt="ZprCE5.png"></a></li>
+<li>使用<code>snap find</code>搜索印象笔记安装包<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">snap find evernote</span><br></pre></td></tr></table></figure>
+<a href="https://www.helloimg.com/image/ZprG90"><img src="https://www.helloimg.com/images/2022/08/26/ZprG90.png" alt="ZprG90.png"></a></li>
+<li>选择其中一个包，进行安装<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">snap evernote-web-client</span><br></pre></td></tr></table></figure></li>
+</ol>
+<h1 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h1><p>最后安装的印象笔记应该还是个开发版，可以登陆，可以同步笔记，但是不能编辑。可能是我还没有找到正确的打开方式。如果有能用的linux版印象笔记记得踢踢我。</p>
+<h1 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h1><p><a href="https://www.linux.com/topic/desktop/get-started-snap-packages-linux/">https://www.linux.com/topic/desktop/get-started-snap-packages-linux/</a></p>
+]]></content>
+      <categories>
+        <category>Linux</category>
+      </categories>
+      <tags>
+        <tag>linux</tag>
+      </tags>
+  </entry>
 </search>
