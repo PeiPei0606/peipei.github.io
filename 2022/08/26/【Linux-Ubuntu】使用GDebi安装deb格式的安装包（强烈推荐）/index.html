@@ -20,28 +20,33 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Muse","darkmode":false,"version":"8.12.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="vim是一个便捷易用的文书编辑器，Mac系统和Linux系统都自带vim编辑器。使用vim编辑Markdown文件的命令为vim new.md，默认进入的是命令模式，需要先输入i切换至输入模式才可以进行文字编辑。 vim模式切换i从命令模式切换至输入模式esc从输入模式切换至命令模式 vim底线命令模式:wq保存并退出:q！不保存退出:w保存文件:q退出文件:h帮助:new新建文件并用vim打开">
+    <meta name="description" content="问题的出现之前在Snap中找到的WPS版本都比较古老，而且字体也并不跟随系统，导致界面很乱。我就在WPS官网上面找到了64位Deb格式的安装包，使用GDebi安装。GDebi可以使用图形界面（GUI模式）安装，也可以使用终端命令行模式（command line模式）安装。它能识别依赖项，在安装的过程中避免出现”依赖项错误“。 方法一：图形界面安装（GUI模式） 鼠标右键点击Deb文件，选择“使用其">
 <meta property="og:type" content="article">
-<meta property="og:title" content="vim常用命令">
-<meta property="og:url" content="http://example.com/2022/08/19/vim%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/index.html">
+<meta property="og:title" content="【Linux&#x2F;Ubuntu】使用GDebi安装deb格式的安装包（强烈推荐）">
+<meta property="og:url" content="http://example.com/2022/08/26/%E3%80%90Linux-Ubuntu%E3%80%91%E4%BD%BF%E7%94%A8GDebi%E5%AE%89%E8%A3%85deb%E6%A0%BC%E5%BC%8F%E7%9A%84%E5%AE%89%E8%A3%85%E5%8C%85%EF%BC%88%E5%BC%BA%E7%83%88%E6%8E%A8%E8%8D%90%EF%BC%89/index.html">
 <meta property="og:site_name" content="沛沛的博客">
-<meta property="og:description" content="vim是一个便捷易用的文书编辑器，Mac系统和Linux系统都自带vim编辑器。使用vim编辑Markdown文件的命令为vim new.md，默认进入的是命令模式，需要先输入i切换至输入模式才可以进行文字编辑。 vim模式切换i从命令模式切换至输入模式esc从输入模式切换至命令模式 vim底线命令模式:wq保存并退出:q！不保存退出:w保存文件:q退出文件:h帮助:new新建文件并用vim打开">
+<meta property="og:description" content="问题的出现之前在Snap中找到的WPS版本都比较古老，而且字体也并不跟随系统，导致界面很乱。我就在WPS官网上面找到了64位Deb格式的安装包，使用GDebi安装。GDebi可以使用图形界面（GUI模式）安装，也可以使用终端命令行模式（command line模式）安装。它能识别依赖项，在安装的过程中避免出现”依赖项错误“。 方法一：图形界面安装（GUI模式） 鼠标右键点击Deb文件，选择“使用其">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2022-08-19T07:28:20.000Z">
-<meta property="article:modified_time" content="2022-08-19T07:33:46.299Z">
+<meta property="og:image" content="https://www.helloimg.com/images/2022/08/26/ZpkYbP.png">
+<meta property="og:image" content="https://www.helloimg.com/images/2022/08/26/ZpkfD6.png">
+<meta property="og:image" content="https://www.helloimg.com/images/2022/08/26/Zpky0z.png">
+<meta property="og:image" content="https://www.helloimg.com/images/2022/08/26/Zpr5jA.png">
+<meta property="article:published_time" content="2022-08-25T18:00:19.000Z">
+<meta property="article:modified_time" content="2022-08-25T18:01:35.969Z">
 <meta property="article:author" content="沛沛">
-<meta property="article:tag" content="vim">
+<meta property="article:tag" content="linux">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://www.helloimg.com/images/2022/08/26/ZpkYbP.png">
 
 
-<link rel="canonical" href="http://example.com/2022/08/19/vim%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/">
+<link rel="canonical" href="http://example.com/2022/08/26/%E3%80%90Linux-Ubuntu%E3%80%91%E4%BD%BF%E7%94%A8GDebi%E5%AE%89%E8%A3%85deb%E6%A0%BC%E5%BC%8F%E7%9A%84%E5%AE%89%E8%A3%85%E5%8C%85%EF%BC%88%E5%BC%BA%E7%83%88%E6%8E%A8%E8%8D%90%EF%BC%89/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://example.com/2022/08/19/vim%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/","path":"2022/08/19/vim常用命令/","title":"vim常用命令"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://example.com/2022/08/26/%E3%80%90Linux-Ubuntu%E3%80%91%E4%BD%BF%E7%94%A8GDebi%E5%AE%89%E8%A3%85deb%E6%A0%BC%E5%BC%8F%E7%9A%84%E5%AE%89%E8%A3%85%E5%8C%85%EF%BC%88%E5%BC%BA%E7%83%88%E6%8E%A8%E8%8D%90%EF%BC%89/","path":"2022/08/26/【Linux-Ubuntu】使用GDebi安装deb格式的安装包（强烈推荐）/","title":"【Linux/Ubuntu】使用GDebi安装deb格式的安装包（强烈推荐）"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>vim常用命令 | 沛沛的博客</title>
+<title>【Linux/Ubuntu】使用GDebi安装deb格式的安装包（强烈推荐） | 沛沛的博客</title>
   
 
 
@@ -143,7 +148,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#vim%E6%A8%A1%E5%BC%8F%E5%88%87%E6%8D%A2"><span class="nav-number">1.</span> <span class="nav-text">vim模式切换</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#vim%E5%BA%95%E7%BA%BF%E5%91%BD%E4%BB%A4%E6%A8%A1%E5%BC%8F"><span class="nav-number">2.</span> <span class="nav-text">vim底线命令模式</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#vim%E8%BE%93%E5%85%A5%E6%A8%A1%E5%BC%8F"><span class="nav-number">3.</span> <span class="nav-text">vim输入模式</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%8F%82%E8%80%83%E5%BC%95%E7%94%A8"><span class="nav-number">4.</span> <span class="nav-text">参考引用</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E9%97%AE%E9%A2%98%E7%9A%84%E5%87%BA%E7%8E%B0"><span class="nav-number">1.</span> <span class="nav-text">问题的出现</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%96%B9%E6%B3%95%E4%B8%80%EF%BC%9A%E5%9B%BE%E5%BD%A2%E7%95%8C%E9%9D%A2%E5%AE%89%E8%A3%85%EF%BC%88GUI%E6%A8%A1%E5%BC%8F%EF%BC%89"><span class="nav-number">2.</span> <span class="nav-text">方法一：图形界面安装（GUI模式）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%96%B9%E6%B3%95%E4%BA%8C%EF%BC%9A%E7%BB%88%E7%AB%AF%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%AE%89%E8%A3%85"><span class="nav-number">3.</span> <span class="nav-text">方法二：终端命令行安装</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%8F%82%E8%80%83%E5%BC%95%E7%94%A8"><span class="nav-number">4.</span> <span class="nav-text">参考引用</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -206,7 +211,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2022/08/19/vim%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/08/26/%E3%80%90Linux-Ubuntu%E3%80%91%E4%BD%BF%E7%94%A8GDebi%E5%AE%89%E8%A3%85deb%E6%A0%BC%E5%BC%8F%E7%9A%84%E5%AE%89%E8%A3%85%E5%8C%85%EF%BC%88%E5%BC%BA%E7%83%88%E6%8E%A8%E8%8D%90%EF%BC%89/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -219,12 +224,12 @@
     </span>
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="vim常用命令 | 沛沛的博客">
+      <meta itemprop="name" content="【Linux/Ubuntu】使用GDebi安装deb格式的安装包（强烈推荐） | 沛沛的博客">
       <meta itemprop="description" content="">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          vim常用命令
+          【Linux/Ubuntu】使用GDebi安装deb格式的安装包（强烈推荐）
         </h1>
 
         <div class="post-meta-container">
@@ -236,7 +241,7 @@
       <span class="post-meta-item-text">发表于</span>
       
 
-      <time title="创建时间：2022-08-19 15:28:20 / 修改时间：15:33:46" itemprop="dateCreated datePublished" datetime="2022-08-19T15:28:20+08:00">2022-08-19</time>
+      <time title="创建时间：2022-08-26 02:00:19 / 修改时间：02:01:35" itemprop="dateCreated datePublished" datetime="2022-08-26T02:00:19+08:00">2022-08-26</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -258,13 +263,20 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <p>vim是一个便捷易用的文书编辑器，Mac系统和Linux系统都自带vim编辑器。使用vim编辑Markdown文件的命令为<code>vim new.md</code>，默认进入的是<strong>命令模式</strong>，需要先输入<code>i</code>切换至<strong>输入模式</strong>才可以进行文字编辑。</p>
-<h1 id="vim模式切换"><a href="#vim模式切换" class="headerlink" title="vim模式切换"></a>vim模式切换</h1><p><code>i</code>从命令模式切换至输入模式<br><code>esc</code>从输入模式切换至命令模式</p>
-<h1 id="vim底线命令模式"><a href="#vim底线命令模式" class="headerlink" title="vim底线命令模式"></a>vim底线命令模式</h1><p><code>:wq</code>保存并退出<br><code>:q！</code>不保存退出<br><code>:w</code>保存文件<br><code>:q</code>退出文件<br><code>:h</code>帮助<br><code>:new</code>新建文件并用vim打开</p>
-<h1 id="vim输入模式"><a href="#vim输入模式" class="headerlink" title="vim输入模式"></a>vim输入模式</h1><p>输入模式中的按键操作与其他文本编辑器的操作一致。<br><code>方向键</code>在文本中移动光标<br><code>回车键</code>换行<br><code>退格键</code>删除光标前一个字符<br><code>删除键</code>删除光标后一个字符<br><code>HOME/END</code>移动光标到行首&#x2F;行尾<br><code>Page Up/Page Down</code>上&#x2F;下翻页<br><code>Insert</code>切换光标为输入&#x2F;替换模式，光标将变成竖线&#x2F;下划线</p>
-<h1 id="参考引用"><a href="#参考引用" class="headerlink" title="参考引用"></a>参考引用</h1><blockquote>
-<p><a target="_blank" rel="noopener" href="https://www.runoob.com/linux/linux-vim.html">https://www.runoob.com/linux/linux-vim.html</a></p>
-</blockquote>
+        <h1 id="问题的出现"><a href="#问题的出现" class="headerlink" title="问题的出现"></a>问题的出现</h1><p>之前在Snap中找到的WPS版本都比较古老，而且字体也并不跟随系统，导致界面很乱。我就在WPS官网上面找到了64位Deb格式的安装包，使用GDebi安装。<br><strong>GDebi</strong>可以使用图形界面（GUI模式）安装，也可以使用终端命令行模式（command line模式）安装。它能识别依赖项，在安装的过程中避免出现”依赖项错误“。</p>
+<h1 id="方法一：图形界面安装（GUI模式）"><a href="#方法一：图形界面安装（GUI模式）" class="headerlink" title="方法一：图形界面安装（GUI模式）"></a>方法一：图形界面安装（GUI模式）</h1><ol>
+<li>鼠标右键点击Deb文件，选择“使用其他程序打开”</li>
+<li>等待一段时间，等GDebi解压安装包</li>
+<li>点击右上角出现的“安装软件包“</li>
+<li>等待安装</li>
+</ol>
+<p><a target="_blank" rel="noopener" href="https://www.helloimg.com/image/ZpkYbP"><img src="https://www.helloimg.com/images/2022/08/26/ZpkYbP.png" alt="ZpkYbP.png"></a><br><a target="_blank" rel="noopener" href="https://www.helloimg.com/image/ZpkfD6"><img src="https://www.helloimg.com/images/2022/08/26/ZpkfD6.png" alt="ZpkfD6.png"></a><br><a target="_blank" rel="noopener" href="https://www.helloimg.com/image/Zpky0z"><img src="https://www.helloimg.com/images/2022/08/26/Zpky0z.png" alt="Zpky0z.png"></a></p>
+<h1 id="方法二：终端命令行安装"><a href="#方法二：终端命令行安装" class="headerlink" title="方法二：终端命令行安装"></a>方法二：终端命令行安装</h1><p>找到deb所在的路径，然后输入：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo gdebi deb文件所在的路径</span><br></pre></td></tr></table></figure>
+<p>例如：<br><a target="_blank" rel="noopener" href="https://www.helloimg.com/image/Zpr5jA"><img src="https://www.helloimg.com/images/2022/08/26/Zpr5jA.png" alt="Zpr5jA.png"></a></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo gdebi /下载/google-chrome-stable_current_amd64.deb</span><br></pre></td></tr></table></figure>
+
+<h1 id="参考引用"><a href="#参考引用" class="headerlink" title="参考引用"></a>参考引用</h1><p><a target="_blank" rel="noopener" href="https://itsfoss.com/gdebi-default-ubuntu-software-center/#how-to-use-gdebi-for-installing-deb-packges-gui-and-terminal">https://itsfoss.com/gdebi-default-ubuntu-software-center/#how-to-use-gdebi-for-installing-deb-packges-gui-and-terminal</a></p>
 
     </div>
 
@@ -274,21 +286,18 @@
 
     <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/vim/" rel="tag"># vim</a>
+              <a href="/tags/linux/" rel="tag"># linux</a>
           </div>
 
         
 
           <div class="post-nav">
             <div class="post-nav-item">
-                <a href="/2022/08/19/Pysal%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%881%EF%BC%89/" rel="prev" title="Pysal学习笔记（1）——概述">
-                  <i class="fa fa-chevron-left"></i> Pysal学习笔记（1）——概述
+                <a href="/2022/08/26/%E3%80%90Linux-Ubuntu%E3%80%91%E8%A7%A3%E5%86%B3%E2%80%9C%E6%AD%A3%E5%9C%A8%E7%AD%89%E5%BE%85%E7%BC%93%E5%AD%98%E9%94%81%EF%BC%9A%E6%97%A0%E6%B3%95%E8%8E%B7%E5%BE%97%E9%94%81-var-lib-dpkg-lock-frontend%E3%80%82%E9%94%81%E6%AD%A3%E7%94%B1%E8%BF%9B%E7%A8%8B16525%E6%8C%81%E6%9C%89%E2%80%9D%E9%97%AE%E9%A2%98/" rel="prev" title="【Linux/Ubuntu】解决“正在等待缓存锁：无法获得锁 /var/lib/dpkg/lock-frontend。锁正由进程16525持有”问题">
+                  <i class="fa fa-chevron-left"></i> 【Linux/Ubuntu】解决“正在等待缓存锁：无法获得锁 /var/lib/dpkg/lock-frontend。锁正由进程16525持有”问题
                 </a>
             </div>
             <div class="post-nav-item">
-                <a href="/2022/08/19/Linux%E6%9C%80%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/" rel="next" title="Linux最常用命令">
-                  Linux最常用命令 <i class="fa fa-chevron-right"></i>
-                </a>
             </div>
           </div>
     </footer>

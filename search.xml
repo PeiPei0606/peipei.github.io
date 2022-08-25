@@ -148,4 +148,29 @@
         <tag>linux</tag>
       </tags>
   </entry>
+  <entry>
+    <title>【Linux/Ubuntu】使用GDebi安装deb格式的安装包（强烈推荐）</title>
+    <url>/2022/08/26/%E3%80%90Linux-Ubuntu%E3%80%91%E4%BD%BF%E7%94%A8GDebi%E5%AE%89%E8%A3%85deb%E6%A0%BC%E5%BC%8F%E7%9A%84%E5%AE%89%E8%A3%85%E5%8C%85%EF%BC%88%E5%BC%BA%E7%83%88%E6%8E%A8%E8%8D%90%EF%BC%89/</url>
+    <content><![CDATA[<h1 id="问题的出现"><a href="#问题的出现" class="headerlink" title="问题的出现"></a>问题的出现</h1><p>之前在Snap中找到的WPS版本都比较古老，而且字体也并不跟随系统，导致界面很乱。我就在WPS官网上面找到了64位Deb格式的安装包，使用GDebi安装。<br><strong>GDebi</strong>可以使用图形界面（GUI模式）安装，也可以使用终端命令行模式（command line模式）安装。它能识别依赖项，在安装的过程中避免出现”依赖项错误“。</p>
+<h1 id="方法一：图形界面安装（GUI模式）"><a href="#方法一：图形界面安装（GUI模式）" class="headerlink" title="方法一：图形界面安装（GUI模式）"></a>方法一：图形界面安装（GUI模式）</h1><ol>
+<li>鼠标右键点击Deb文件，选择“使用其他程序打开”</li>
+<li>等待一段时间，等GDebi解压安装包</li>
+<li>点击右上角出现的“安装软件包“</li>
+<li>等待安装</li>
+</ol>
+<p><a href="https://www.helloimg.com/image/ZpkYbP"><img src="https://www.helloimg.com/images/2022/08/26/ZpkYbP.png" alt="ZpkYbP.png"></a><br><a href="https://www.helloimg.com/image/ZpkfD6"><img src="https://www.helloimg.com/images/2022/08/26/ZpkfD6.png" alt="ZpkfD6.png"></a><br><a href="https://www.helloimg.com/image/Zpky0z"><img src="https://www.helloimg.com/images/2022/08/26/Zpky0z.png" alt="Zpky0z.png"></a></p>
+<h1 id="方法二：终端命令行安装"><a href="#方法二：终端命令行安装" class="headerlink" title="方法二：终端命令行安装"></a>方法二：终端命令行安装</h1><p>找到deb所在的路径，然后输入：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">sudo gdebi deb文件所在的路径</span><br></pre></td></tr></table></figure>
+<p>例如：<br><a href="https://www.helloimg.com/image/Zpr5jA"><img src="https://www.helloimg.com/images/2022/08/26/Zpr5jA.png" alt="Zpr5jA.png"></a></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">sudo gdebi /下载/google-chrome-stable_current_amd64.deb</span><br></pre></td></tr></table></figure>
+
+<h1 id="参考引用"><a href="#参考引用" class="headerlink" title="参考引用"></a>参考引用</h1><p><a href="https://itsfoss.com/gdebi-default-ubuntu-software-center/#how-to-use-gdebi-for-installing-deb-packges-gui-and-terminal">https://itsfoss.com/gdebi-default-ubuntu-software-center/#how-to-use-gdebi-for-installing-deb-packges-gui-and-terminal</a></p>
+]]></content>
+      <categories>
+        <category>Linux</category>
+      </categories>
+      <tags>
+        <tag>linux</tag>
+      </tags>
+  </entry>
 </search>
